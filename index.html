@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#42c9b7">
+  <meta name="description" content="邓心语的生日惊喜">
+  <title>给邓心语的生日惊喜</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="lock-screen" id="lockScreen" aria-labelledby="lockTitle">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+      <div class="sparkles" aria-hidden="true">
+        <i>✦</i><i>·</i><i>✧</i><i>·</i><i>✦</i>
+      </div>
+
+      <div class="card">
+        <p class="eyebrow">A LITTLE SURPRISE</p>
+        <h1 id="lockTitle">有一份生日惊喜<br>等你打开</h1>
+
+        <div class="cake" aria-label="蓝色、绿色和粉色的生日蛋糕插画">
+          <div class="candles" aria-hidden="true">
+            <span class="candle blue"><b></b></span>
+            <span class="candle pink"><b></b></span>
+            <span class="candle green"><b></b></span>
+          </div>
+          <div class="cake-top"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="cake-layer top-layer"><i></i><i></i><i></i></div>
+          <div class="cake-layer bottom-layer"><i></i><i></i><i></i><i></i></div>
+          <div class="plate"></div>
+        </div>
+
+        <form class="unlock" id="unlockForm" novalidate>
+          <label for="password">输入生日密码</label>
+          <div class="input-row">
+            <input id="password" name="password" type="password" inputmode="decimal" autocomplete="off" placeholder="••••" maxlength="5" aria-describedby="hint errorMessage">
+            <button type="submit" aria-label="解锁生日惊喜">解锁</button>
+          </div>
+          <p class="hint" id="hint">提示：她的生日日期</p>
+          <p class="error" id="errorMessage" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+      <p class="footer-note">Made with 💙 💚 🩷</p>
+    </section>
+
+    <section class="reveal-screen" id="revealScreen" aria-hidden="true">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <figure class="greeting-card">
+        <img src="dengxinyu-birthday.png" alt="邓心语生日快乐贺卡">
+      </figure>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
